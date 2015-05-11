@@ -1,0 +1,24 @@
+{
+   "author": "Joe Looney",
+   "background": {
+      "scripts": [ "js/jquery.min.js" ]
+   },
+   
+   "description": "Parse and Display Counterparty Data at Chain.so",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "content_scripts": [
+    {
+      "matches": ["https://chain.so/*"],
+      "js": ["js/jquery.min.js", "js/find-xcp-data.js"]
+    }
+   ],
+
+   "manifest_version": 2,
+   "name": "chain so xcp",
+   "short_name": "chain so xcp",
+   "version": "0.1.0"
+}
